@@ -1,0 +1,18 @@
+<div ng-controller="loginController">
+	<div class="alert" id="divstatus" style="visibility:hidden">
+	  {{statusmsg}}
+	</div>
+	
+	<form ng-submit="login()" >
+		<div class="form-group">
+	    	<label>Email address</label>
+	    	<input class="form-control" id="txtlogin" ng-model="txtlogin" placeholder="Enter your email address">
+	  	</div>
+	  	<div class="form-group">
+	    	<label>Password</label>
+	    	<input type="password" class="form-control" ng-model="txtpassword" id="txtpassword" placeholder="Enter your password">
+	  	</div>
+	  	<input class="btn btn-success" type="submit" value="Login"/>
+  	</form>
+	
+</div>
